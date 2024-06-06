@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sekolah</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header-wrapper">
+        <img class="logo" alt="brand-logo" src="./logo.png" width="50" height="50"/>
+        <div class="menu">
+            <button>Home</button>
+            <button onclick="location.href='OurProfile.html'">Our Profile</button>
+            <button>Achievement</button>
+            <button>Message Us</button>
+        </div>
+    </header>
+    <nav class="navbar">
+      <ul>
+        <li><a href="OurProfile.html"></a></li>
+      </ul>
+    </nav>
+    <img class="logo" alt="background" src="./background sekolah.jpg" width="700" height="300"/>
+  <h1>Hi Kennardy, Selamat Datang</h1>
+  <p>Website latihan pertama</p>
+  <p>Our Facilitation</p>
+  <ul>
+    <li>Professional Teacher</li>
+    <li>Sport Field</li>
+    <li>Classroom</li>
+  </ul>
+  <p>Message Us</p>
+  <div id="message-display"></div>
+  <form id="messageForm">
+    <label for="name">Nama:</label>
+    <input type="text" id="name" name="name" required>
+    <br>
+    <label for="tanggal_lahir">Tanggal Lahir:</label>
+    <input type="date" id="tanggal_lahir" name="tanggal_lahir" required>
+    <br>
+    <label for="jenis_kelamin">Jenis Kelamin:</label>
+    <br>
+    <input type="radio" id="laki_laki" name="jenis_kelamin" value="Laki-laki" required>
+    <label for="laki_laki">Laki-laki</label>
+    <br>
+    <input type="radio" id="perempuan" name="jenis_kelamin" value="Perempuan">
+    <label for="perempuan">Perempuan</label>
+    <br>
+    <label for="message">Pesan:</label>
+    <textarea id="message" name="message"></textarea>
+    <br>
+    <input type="submit" value="Submit">
+  </form>
+  <p>Current time:</p>
+  <p><span id="current-time"></span></p>
+
+  <p>Nama: <span id="nama-pengguna"></span></p>
+  <p>Tanggal Lahir: <span id="tanggal-lahir"></span></p>
+  <p>Jenis Kelamin: <span id="jenis-kelamin"></span></p>
+  <p>Pesan: <span id="pesan-pengguna"></span></p>
+
+  <script src="script.js"></script>
+</body>
+</html>
